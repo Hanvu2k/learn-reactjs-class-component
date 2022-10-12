@@ -1,0 +1,91 @@
+#customers {
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+    td,
+    th {
+        border: 1px solid #ddd;
+        padding: 8px;
+    }
+
+    tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    tr:hover {
+        background-color: #ddd;
+    }
+
+    th {
+        padding-top: 12px;
+        padding-bottom: 12px;
+        text-align: left;
+        background-color: #04AA6D;
+        color: white;
+    }
+
+
+    .btn {
+        width: 50px;
+        outline: none;
+        border: none;
+        background: transparent;
+    }
+
+    .btn-edit {
+        color: orange;
+
+        &:hover {
+            background-color: transparent !important;
+            color: orange !important;
+        }
+    }
+
+    .btn-delete {
+        color: red;
+
+        &:hover {
+            background-color: transparent !important;
+            color: red !important;
+        }
+    }
+}
+
+.modal-user-container {
+
+    .modal-header {
+        button {
+            background-color: transparent !important;
+            border: none;
+            color: white;
+            font-size: 28px;
+        }
+    }
+
+    .modal-user-body {
+        display: flex;
+        gap: 15px;
+
+        .input-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+
+            &.max-width-input {
+                width: 100%;
+            }
+
+            input {
+                border-radius: 3px;
+                border: 1px solid gray;
+                height: 30px;
+                outline: none;
+                padding: 0 10px;
+
+            }
+        }
+    }
+
+
+}
