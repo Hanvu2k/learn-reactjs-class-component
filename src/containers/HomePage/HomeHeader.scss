@@ -1,0 +1,208 @@
+.home-header-container {
+    height: 60px;
+    position: fixed;
+    z-index: 10000;
+    background: #fff;
+    width: 100%;
+
+    .home-header-content {
+        width: 100%;
+        height: 100%;
+        display: flex;
+
+        .left-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 26px;
+                color: #999;
+                cursor: pointer;
+            }
+
+            .logo {
+                background: url('../../assets/images/logo.png') center center no-repeat;
+                height: 100%;
+                width: 100%;
+                cursor: pointer;
+            }
+        }
+
+        .center-content {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .child-content {
+
+                .name {
+                    font-size: 14px;
+                    font-weight: 600;
+                }
+
+                .description {
+                    font-size: 12px;
+                    font-weight: 500;
+                }
+            }
+
+        }
+
+        .right-content {
+            width: 25%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+
+            .support {
+                padding-right: 50px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+
+                i {
+                    margin-right: 5px;
+                    color: #49bce2;
+                }
+
+                .support-text {}
+
+            }
+
+            .language-vi {
+
+                span {
+                    cursor: pointer;
+                    opacity: 0.1;
+
+                    &.active {
+                        opacity: 1;
+                        color: #49bce2
+                    }
+                }
+            }
+
+            .language-en {
+                padding-left: 10px;
+
+                span {
+                    cursor: pointer;
+                    opacity: 0.1;
+
+                    &.active {
+                        opacity: 1;
+                        color: #49bce2
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
+
+.home-header-banner {
+    margin-top: 60px;
+    background: url('../../assets/images/headerBackgroung.jpg');
+    height: 750px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+
+
+    .top-content {
+        height: 60%;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(255, 255, 255, 0.1));
+
+        .top-title {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #333;
+            margin: 100px 0 10px 0;
+        }
+
+        .bot-title {
+            text-align: center;
+            color: #fff;
+            font-size: 30px;
+            text-shadow: 1px 1px 1px #333;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .search {
+            border-radius: 25px;
+            background: #f7d800;
+            width: 400px;
+            display: flex;
+            align-items: center;
+            margin: 0 auto;
+            padding: 10px 14px;
+
+            i {
+                margin: 0 5px;
+            }
+
+            .search-input {
+                background: #f7d800;
+                border: none;
+                outline: none;
+                height: 25px;
+                width: 300px;
+            }
+        }
+    }
+
+    .bot-content {
+        height: 40%;
+        padding-bottom: 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        background-image: linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 1));
+
+        .options {
+            gap: 50px;
+            display: flex;
+
+            .option-child {
+                width: 100px;
+                text-align: center;
+                cursor: pointer;
+
+                .icon {
+                    background: #fff;
+                    width: 40px;
+                    height: 40px;
+                    padding: 10px;
+                    border-radius: 50%;
+                    margin: 0 auto;
+                    box-shadow: 1px 1px 1px #333;
+
+                    i {
+                        font-size: 20px;
+                        color: #49bce2;
+                    }
+                }
+
+                .text {
+                    font-size: 17px;
+                    font-weight: 500;
+
+                    &:hover {
+                        color: #49bce2;
+                    }
+                }
+            }
+
+        }
+    }
+
+
+}
