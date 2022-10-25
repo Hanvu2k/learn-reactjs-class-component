@@ -1,0 +1,20 @@
+.lable-upload {
+    padding: 5px;
+    border-radius: 3px;
+    background: #ddd;
+    cursor: pointer;
+
+    &:hover {
+        opacity: 0.9;
+    }
+}
+
+.prev-image {
+    margin: 4px 0;
+    height: 50px;
+    width: 100%;
+    border: 1px solid #ccc;
+    background: center center no-repeat;
+    background-size: contain;
+    cursor: pointer;
+}

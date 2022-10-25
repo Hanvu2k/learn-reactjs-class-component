@@ -21,14 +21,12 @@ class Login extends Component {
         this.setState({
             username: e.target.value,
         })
-        console.log(e.target.value)
     }
 
     handleOnChangePassword = (e) => {
         this.setState({
             password: e.target.value
         })
-        console.log(e.target.value)
     }
 
     handleLogin = async () => {
@@ -128,14 +126,14 @@ class Login extends Component {
 
 const mapStateToProps = state => {
     return {
-        language: state.app.language
+        language: state.app.language,
     };
 };
 
 const mapDispatchToProps = dispatch => {
     return {
         navigate: (path) => dispatch(push(path)),
-        userLoginFail: () => dispatch(actions.userLoginFail()),
+        // userLoginFail: () => dispatch(actions.userLoginFail()),
         userLoginSuccess: (userInfor) => dispatch(actions.userLoginSuccess(userInfor))
     };
 };
